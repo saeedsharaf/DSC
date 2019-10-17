@@ -47,7 +47,7 @@ if($dashboard_query->num_rows > 0){
 
 /////////////////////////// below code to update no of support calls and nu of supported agent ///////////////////////////////////////
 /*
-$queue = 'pre';
+$queue = 'post';
 
 $sql ="select * from dashboard where queue = '$queue' and month = '10'";
     $result = $connect->query($sql);
@@ -83,9 +83,9 @@ $sql ="select * from dashboard where queue = '$queue' and month = '10'";
 */
 
 /////////////////////////////////////// below code to insert daily spv score /////////////////////////////////////////////////////////
-   /*
+  /*
 
-        $select_day = "select * from dashboard where queue = 'pre' and date ='10/13/2019'";   //////// just to get date saved in db
+        $select_day = "select * from dashboard where queue = 'pre' and date ='10/16/2019'";   //////// just to get date saved in db
        
         $day_result = $connect->query($select_day);
      
@@ -231,7 +231,7 @@ $sql ="select * from dashboard where queue = '$queue' and month = '10'";
 */
 ////////////////////////////////////////////////////////below code to update agent daily /////////////////////////////////////////////
 /*
-$select_day = "select * from dashboard where queue = 'pre' and month = '10' and date ='10/13/2019' ";   //////// just to get date saved in db
+$select_day = "select * from dashboard where queue = 'pre' and month = '10' and date ='10/16/2019' ";   //////// just to get date saved in db
         $day_result = $connect->query($select_day);
 
         while($day_row = $day_result->fetch_assoc()){
@@ -337,8 +337,8 @@ $select_day = "select * from dashboard where queue = 'pre' and month = '10' and 
 
     ///// note don't forget to set month in updata sql 
 
-
 /*
+
 
         $select_day = "select * from structure ";   //////// just to get date saved in db
         $day_result = $connect->query($select_day);
@@ -520,14 +520,14 @@ $select_day = "select * from dashboard where queue = 'pre' and month = '10' and 
 
         }
     
-*/
 
+*/
 ///////////////////////////////////////////////////// below code to update score ber agent ////////////////////////////////////////////
   
 
-
-
 /*
+
+
 $month = 10;
 $year = 2019;
 
@@ -787,10 +787,10 @@ while($row = $result->fetch_assoc()){
         echo $connect->error . '<br>';
     }
 }
-
 */
-/////////////////////////////////////// update sv mtd ////////////////////////////////////////////// 
 
+/////////////////////////////////////// update sv mtd ////////////////////////////////////////////// 
+/*
       $select_spv = "select * from member where access = 'super'";   //////// just to get spv id 
         $spv = $connect->query($select_spv);
         echo $connect->error;
@@ -951,10 +951,10 @@ while($row = $result->fetch_assoc()){
 
         }
 
-
+*/
 
         ////////////////////////////////////// below dat to update nps dashboard mtd //////////////////////////////////
-  /*
+  
         $select = "select * from dashboard where month = 10";
         $select_result = $connect->query($select);
 
@@ -1065,7 +1065,7 @@ while($row = $result->fetch_assoc()){
 
         }
 
-  */
+  
         ///////////////////////////////////////////   /////////////////////////////////////
 /*
 
